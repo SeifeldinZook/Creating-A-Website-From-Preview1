@@ -1,0 +1,407 @@
+/*----------------------------------------Start Main Rules---------------------------*/
+body {
+	background-color: #0E0E0E;  /*1. Color of the whole page */
+	height: 4000px;
+}
+.container {
+	width: 1170px;
+	margin: auto;
+}
+.clearfix {clear: both}
+/*----------------------------------------End Main Rules----------------------------*/
+/*-----------------------------------------Start header-----------------------------*/
+.header .slider {
+	background-image: url('../images/slider6.jpg');
+	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	
+	background-size: cover;
+	height: 600px;
+
+}
+.header .slider .intro {
+	text-transform:uppercase;
+	text-align: center;
+	color: #fff;
+	padding-top: 150px; 
+}
+.header .slider .intro h2 {
+	width: 290px;
+	margin: 0 auto; 
+	font-size: 20px;
+	border-bottom: 4px solid;
+	padding: 10px;
+
+}
+.header .slider .intro button {
+	background: none; 
+	color: #fff;
+	font-size: 20px;
+	padding: 10px;
+	border: 1px solid #fff;
+	font-weight: bold;
+	cursor: pointer;
+}
+.header .navbar {
+	background-color: #243030;
+	color: #FFFF;
+	overflow: hidden;
+	/*
+	The overflow property specifies what should 
+	happen if content overflows an element's box.
+	*/
+	text-transform: uppercase;
+}
+.header .navbar h2 {float: left;} /*sets the h2 elem. to the most left of the navbar */
+.header .navbar h2 span {color:#2ecc71;}
+.header .navbar ul {
+	list-style: none;
+	padding-left: 0; /*sets the left space of an element to be zero.*/
+	overflow: hidden;
+	float: right;
+	text-transform: uppercase;
+}
+.header .navbar ul li {
+	float: left; /*sets the list items(li) to added to left*/
+	padding: 10px; /*sets the space between each li to be 10 pixels*/
+}
+.header .navbar ul li a {
+	color: #FFF;
+	text-decoration: none; /* delete the underline*/
+}
+.header .navbar ul li.activeyazook a,
+.header .navbar ul li a:hover { /*onstand*/
+	color: #2ecc71;
+}
+/*------------------------------------------End header------------------------------*/
+/*------------------------------------------Start box 1-----------------------------*/
+.Box1 {
+	overflow: hidden;
+	padding: 30px 0 30px 0;
+	background-color: #FFF;
+}
+.Box1 .Text {
+	float: left;
+	width: 33.3333333333%;
+	height: 150px;
+	overflow: hidden;
+}
+.Box1 .Text h2 {
+	text-transform: uppercase;
+	color: #555;
+}
+.Box1 .Text p {
+	line-height: 1.6;
+	color: #888;
+	text-align: justify;
+	padding: 0 20px 0 0;
+}
+/*------------------------------------------End box 1-------------------------------*/
+/*------------------------------------------Start About Me--------------------------*/
+.about-me {
+	background-color: #F2F2F2;
+	overflow: hidden;
+}
+.about-me .image {
+	float: left;
+	width: 40%;
+}
+.about-me .image img {width: 100%;}
+.about-me .info {
+	float: left;
+	width: 60%;
+}
+.about-me .info h2 {
+	margin:40px 0 20px 40px; /* t r b l*/
+	color: #555;
+}
+.about-me .info > p { /* > maeans direct child which means apply the 
+	style only on the first paragraph*/
+	margin: 0px 0 10px 40px;
+}
+.about-me .info > p:last-of-type { /* apply the style only on the last paragraph*/
+	margin-top: 25px;
+}
+.about-me .info p {
+	line-height: 1.6;
+	color: #666;
+}
+.about-me .info .hobbies {
+	overflow: hidden;
+	margin: 15px 0 0 40px;
+}
+.about-me .info .hobbies .content {
+	float: left;
+	width: 50%;
+	overflow: hidden;
+}
+.about-me .info .hobbies .content .icon {
+	float: left;
+	width: 12%;        /* (iconwidth% + margin-right%) =17% */
+	margin-right: 5%;
+}
+.about-me .info .hobbies .content .icon img {
+	max-width: 100%;
+	margin: 20px 10px 0 0;
+}
+.about-me .info .hobbies .content .text {
+	float: left;
+	width: 83%;    /* (iconwidth% + margin-right%) + textwidth% = 100% */
+}
+.about-me .info .hobbies .content .text p {margin-top:0;}
+.about-me .info .hobbies .content .text  h3 {color: #555; margin-bottom: 5px;}
+/*------------------------------------------End About Me----------------------------*/
+/*------------------------------------------Start My Skills-------------------------*/
+.my-skills {
+	background-color: #FFFFFF;
+	padding-top: 30px;
+	padding-bottom:30px; 
+	overflow: hidden;
+}
+.my-skills .skills, 
+.my-skills .progress {
+	width: 50%;
+	float: left;
+}
+.my-skills .skills h2 {
+	text-transform: uppercase;
+	margin: 25px 0 20px 40px;
+	color: #555; 
+}
+.my-skills .skills p {
+	margin: 0 0 10px 40px;
+	line-height: 1.6;
+	color: #666;
+} 
+.my-skills .skills p:last-of-type  {margin-top:20px; color: red}
+.my-skills .skills button {margin: 20px 0 0 40px;}
+.my-skills .progress .tech {
+	margin-left: 40px;
+}
+.my-skills .progress .tech h3 {
+	color: #555;
+}
+.my-skills .progress .tech div {
+	background-color: #F2F2F2;
+	height: 25px;
+}
+.my-skills .progress .tech div span {
+	background-color: #2ECC70;
+	height: 25px;
+	display: block;
+	/*width: 83% (the progress) it is better to add this line to the html file*/
+	text-align:right;
+	line-height: 25px;
+	color: #fff;
+}
+/*------------------------------------------End My Skills---------------------------*/
+/*------------------------------------------Start Resume----------------------------*/
+.resume {
+	background-color: #F2F2F2;
+	padding-top: 50px;
+	padding-bottom:70px; 
+	overflow: hidden;
+	text-align: center;
+}
+.resume h2 {
+	text-transform: uppercase;
+	color: #777777;
+	font-weight: bold;
+}
+.resume p {
+	padding: 0 80px;
+	line-height: 1.6;
+	color: #666;
+}
+.resume button {margin: 20px 0 0 40px;}
+/*------------------------------------------End Resume-----------------------------*/
+/*------------------------------------------Start My Education---------------------*/
+.my-education {
+	background-color: #FFFFFF;
+	padding-top: 30px;
+	padding-bottom:30px; 
+	overflow: hidden;
+}
+.my-education .main {
+	width: 50%;
+	float: left;
+	margin-right:5%; 
+} 
+.my-education .main h2 {
+	text-transform: uppercase;
+	color: #555;
+	font-weight: bold;
+}
+.my-education .main p {
+	padding: 0 0;
+	line-height: 1.6;
+	color: #666;
+}
+.my-education .main p:last-of-type {margin-top:20px; color: red}
+.my-education .exp {
+	width: 45%;
+	float: left;
+}
+.my-education .exp h3 {
+	margin: 60px 0 8px 0;
+}
+.my-education .exp span {
+	display:block;
+	margin: 0 0 8px 0;
+	background-color: red: 
+}
+.my-education .exp span:first-of-type {color: #4B5557;}
+.my-education .exp span:last-of-type {
+	background-color: #2ECC70;
+	color: #ffff;
+	display: inline-block;
+	padding: 4px 10px;
+}
+.my-education .exp p {
+	line-height: 1.6;
+	color: #666;
+}
+/*------------------------------------------End My Education-----------------------*/
+/*------------------------------------------Start Testemonials---------------------*/
+.Testemonials {
+	background-color: #F2F2F2;
+	padding-top: 60px;
+	padding-bottom:80px; 
+	overflow: hidden;
+	text-align: center;
+}
+.Testemonials q {
+	line-height:1.8;
+	color: #888;
+	font-weight: bold;
+	font-size: 18px;
+	font-style: italic; /*font: italic bold 18px/1.8 Arial,Tahoma*/
+}
+.Testemonials h3 {
+	color: #777;
+	margin-bottom: 30px;
+}
+.Testemonials ul {
+	padding-left: 0px;
+}
+.Testemonials ul li{
+	width: 15px;
+	height: 15px;
+	border: 2px solid #2DCC70;
+	cursor: pointer;
+	display: inline-block;
+}
+.Testemonials ul li.active,
+.Testemonials ul li:hover {background-color: #2DCC70;}
+/*------------------------------------------End Testemonials-----------------------*/
+/*------------------------------------------Start Portfolio------------------------*/
+.Portfolio {
+	background-color: #FFFFFF;
+	padding-top: 50px;
+	padding-bottom:70px; 
+	overflow: hidden;
+	text-align: center;
+}
+.Portfolio h2 {color: #777777;}
+.Portfolio p {
+	color:#666;
+	text-align: center;
+	margin-bottom:30px;
+	padding-right:20px;
+	padding-left:20px;
+}
+.Portfolio .images {overflow: hidden;}
+.Portfolio .images > div {
+	float: left;
+	width: 33.33333333%;
+	margin-bottom: 10px;
+}
+.Portfolio .images > div img {width: 92% margin:10px;}
+/*------------------------------------------End Portfolio--------------------------*/
+/*------------------------------------------Start Contact Me-----------------------*/
+.contact {
+	background-color: #243030;
+	padding-top: 30px;
+	padding-bottom:30px; 
+	overflow: hidden;
+}
+.contact .info {
+	width: 50%;
+	float: left;
+	margin-right: 5%;
+}
+.contact .info h2 {
+	color: #fff;
+	margin-left: 40px;
+}
+.contact .info p strong {color:#fff;}
+.contact .info p {
+	color: #4B5557;
+	margin-left: 40px;
+	line-height: 1.7;
+}
+.contact .user-inf {
+	width: 45%;
+	float: left;
+}
+.contact .user-inf label {
+	display: block;
+	color: #fff;
+	margin-bottom: 10px; 
+}
+.contact .user-inf input[type="text"] {
+	background-color:#4B5557;
+	width: 80%;
+	border: 0;
+	padding: 10px;
+	color: #fff;
+	margin-bottom:10px; 
+}
+.contact .user-inf input[type="textarea"] {
+	background-color:#4B5557;
+	width: 80%;
+	border: 0;
+	padding: 10px;
+	color: #fff;
+	margin-bottom:10px; 
+	height: 300px;
+}
+.contact .user-inf button {
+	background-color:#191E22 ;
+	color: #fff;
+	margin-top: 10px;
+	padding: 10px 20px;
+	border:0;
+}
+/*------------------------------------------End Contact Me-------------------------*/
+.copyright {
+	background-color: #191E22;
+	color: #4B5557;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.copyright ul {
+	list-style: none;    /* this remove the bullets of each list*/
+	padding-left: 0;
+	margin: 10px 0 0;
+}
+
+.copyright ul li {
+	display: inline-block;
+}
+.copyright ul li img {
+	width: 24px;
+}
+/* My Framework*/
+.MyButton {
+	background: none;
+	color: #2ECC70;
+	padding: 10px 50px;
+	border: 3px solid #2ECC70;
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor: pointer;
+}
